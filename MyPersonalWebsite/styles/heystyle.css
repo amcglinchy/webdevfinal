@@ -1,0 +1,115 @@
+/* body{
+    background-color: rgb(255, 172, 64);
+}
+.header {
+    padding: 10px 16px;
+    color: #f1f1f1;
+    position: fixed;
+  }
+  .space1{
+    width: 500px;
+    height: 200px;
+}
+
+
+  .split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .left {
+    left: 0;
+    background-color: rgb(255, 172, 64);
+  }
+  
+  .right {
+    right: 0;
+    background-color: rgb(241, 247, 86);
+  }
+  
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  } */
+
+  body {
+    margin: 0;
+  }
+  
+  main {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 2px;
+  }
+  
+  h1{
+    font-family: 'Karla', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 40px;
+    color: black;
+    text-align: center;
+  }
+
+  section {
+    transform-style: preserve-3d;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  
+  .no-parallax {
+    background-color: rgb(241, 247, 86);
+    z-index: 999;
+  }
+  
+  section h1 {
+    text-align: center;
+    /* font-size: 40px;
+    font-family: sans-serif; */
+  }
+  
+  .parallax h1 {
+    width: 60%;
+    font-size: 2rem;
+  }
+  
+  .parallax::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateZ(-1px) scale(1.5);
+    background-size: 100%;
+    z-index: -1;
+  }
+  
+  .bg::after {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../img/me2.JPEG");
+    background-size: cover;
+  }
+  
+  @media screen and (min-width: 768px) {
+    section h1 {
+      font-size: 40px;
+    }
+    .parallax h1 {
+      font-size: 40px;
+      color: white;
+    }
+  }

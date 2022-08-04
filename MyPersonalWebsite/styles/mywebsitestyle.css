@@ -1,0 +1,137 @@
+body{
+  background-color: rgb(113 176 255);
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+}
+h1{
+  font-family: 'Karla', sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 70px;
+  color: black;
+  float: left;
+  width: 600px;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+.stuff{
+  font-family: 'Karla', sans-serif;
+  font-weight: lighter;
+  font-size: 24px;
+  color: seashell;
+  float: left;
+  width: 300px;
+  text-align: justify;
+  padding-left: 150px;
+}
+.scroll{
+    float: left;
+    font-size: 18px;
+    font-family: 'Karla', sans-serif;
+    padding-left: 150px;
+}
+.space1{
+    width: 500px;
+    height: 200px;
+}
+#parent {
+    display: flex;
+}
+#narrow {
+    width: 400px;
+}
+#wide {
+    flex: 1;
+}
+.buttonz{
+  color: white;
+  border-width: 1px;
+  border-color: black;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Karla', sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50%;
+  text-shadow: 2px 2px #000000;
+  width: 200px;
+  height: 200px;
+}
+
+#btt {
+  background-color: rgb(255, 129, 198);
+}
+  
+#btt2{
+  background-color: rgb(255, 172, 64);
+}
+
+#btt3{
+  background-color: rgb(241, 247, 86);
+}
+.header {
+  padding: 10px 16px;
+  color: #f1f1f1;
+  position: fixed;
+}
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+.container {
+  padding-left: 100px;
+  display: flex;
+}
+.container > div {
+  flex: 1; 
+}
+
+html.sr .load-hidden {
+  visibility: hidden;
+}
+
+#end{
+  color: none;
+}
+
+/*#btt {
+  width: 50px;
+  animation-name: spin;
+animation-duration: 2s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+  0% {
+      transform: rotate(0deg);
+  }
+
+  100% {
+      transform: rotate(360deg);
+  }
+} */
+
+#btt {
+  transition: transform .7s ease-in-out;
+}
+#btt:hover {
+  transform: rotate(360deg);
+}
+
+#btt2 {
+  transition: transform .7s ease-in-out;
+}
+#btt2:hover {
+  transform: rotate(360deg);
+}
+
+#btt3 {
+  transition: transform .7s ease-in-out;
+}
+#btt3:hover {
+  transform: rotate(360deg);
+}
